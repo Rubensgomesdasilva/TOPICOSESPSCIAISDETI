@@ -1,0 +1,191 @@
+<table border="1">
+    <tr>
+        <td>PROFISSÕES</td>
+        <td>IDADE</td>
+        <td>NOME</td>
+    </tr>
+    <tr>
+        <td>Ted</td>
+        <td>22</td>
+        <td>Estudante</td>
+    </tr>
+    <tr>
+        <td>Ralf</td>
+        <td>26</td>
+        <td>Designer</td>
+    </tr>
+</table>
+--------------------------------------------------------------------
+*/Célula de título da tabela html*/
+<table border="1">
+    <tr>
+        <td>PROFISSÃO</td>
+        <td>IDADE</td>
+        <td>NOME</td>
+    </tr>
+    <tr>
+        <td>Ted</td>
+        <td>22</td>
+        <td>Estudante</td>
+    </tr>
+    <tr>
+        <td>Ralf</td>
+        <td>26</td>
+        <td>Designer</td>
+    </tr>
+</table>
+------------------------------------------------------------
+/* Estruturais da tabela*/
+<table border="2">
+    <thead>
+        <tr>
+            <th>titulo 1</th>
+            <td>titulo 2</td>
+            <td>titulo 3</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Body1 linha1</td>
+            <td>Body2 linha1</td>
+            <td>Body3 linha1</td>
+        </tr>
+        <tr>
+            <td>Body1 linha2</td>
+            <td>Body2 linha2</td>
+            <td>Body3 linha2</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td>Foot 1</td>
+        <td>Foot 2</td>
+        <td>Foot 3</td>
+    </tfoot>
+</table>
+--------------------------------------------------------------
+Criando células vazias
+<table>
+    <tr>
+        <th>&nbsp;</th>
+        <th>Valor</th>
+    </tr>
+    <tr>
+        <td>Item 1</td>
+        <td>R$10,00</td>
+    </tr>
+    <tr>
+        <td>Item 2</td>
+        <td>R$20,00</td>
+    </tr>
+</table>
+----------------------------------------------------------------------------------------
+Células que abrangem mais que uma linha/coluna
+*Primeiro, utilizando o colspan:
+<table border="2">
+    <tr>
+        <th>Nome</th>
+        <th colspan="2">Telefones</th>
+    </tr>
+    <tr>
+        <td>Ted</td>
+        <td>999999-99999</td>
+        <td>87878-989890</td>
+    </tr>
+    <tr>
+        <td>Junior</td>
+        <td>111111-11222</td>
+        <td>32323-434334</td>
+    </tr>
+</table>
+*Depois, utilizando o rowspan:
+<table border="1">
+    <tr>
+      <th>Primeiro Nome:</th>
+      <td>Ted</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telefone:</th>
+      <td>8888-8888</td>
+    </tr>
+    <tr>
+      <td>9999-9999</td>
+    </tr>
+    </table>
+    ---------------------------------------------------------------------------------------------
+    Título da tabela
+    <table border="1">
+        <caption>Exemplo de Título</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+        </tr>
+        <tr>
+            <td>Ted</td>
+            <td>Junior</td>
+        </tr>
+        <tr>
+            <td>Ted</td>
+            <td>Neto</td>
+        </tr>
+    </table>
+    -----------------------------------------------------------------------------------------------
+    Utilizando o colgroup e col
+    
+    <style>
+        .vermelho{
+            background-color: red;
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        .azul{
+            background-color: blue;
+        }
+    </style>
+    
+    <table border="1">
+      <colgroup>
+        <col class="vermelho">
+        <col class="amarelo">
+        <col class="azul">
+      </colgroup>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Profissao</th>
+      </tr>
+      <tr>
+        <td>Ted</td>
+        <td>22</td>
+        <td>Estudante</td>
+      </tr>
+      <tr>
+        <td>Junior</td>
+        <td>26</td>
+        <td>Escritor</td>
+      </tr>
+    </table>
+    -----------------------------------------------------------------------------------------
+    <table border="1">
+      <colgroup>
+        <col span="2" style="background-color:red">
+        <col style="background-color:yellow">
+      </colgroup>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Profissao</th>
+      </tr>
+      <tr>
+        <td>Ted</td>
+        <td>22</td>
+        <td>Estudante</td>
+      </tr>
+      <tr>
+        <td>Junior</td>
+        <td>26</td>
+        <td>Escritor</td>
+      </tr>
+    </table>
+    ------------------------------------------------------------------------------------------------
+    
